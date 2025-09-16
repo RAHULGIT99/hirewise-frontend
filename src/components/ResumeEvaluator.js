@@ -24,7 +24,7 @@ export default function ResumeEvaluator() {
       if (role) fd.append("role", role);
       if (jobDesc) fd.append("job_description", jobDesc);
 
-      const res = await fetch("http://localhost:8000/evaluate", {
+      const res = await fetch("https://hirewise-backend-e9l9.onrender.com/evaluate", {
         method: "POST",
         body: fd,
       });
